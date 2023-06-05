@@ -1,0 +1,32 @@
+Python 3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> <!DOCTYPE html>
+... <html>
+... <head>
+...     <title>Enregistrer un participant</title>
+... </head>
+... <body>
+...     <h1>Enregistrer un participant</h1>
+...     
+...     {% if success %}
+...     <p>Participant enregistré avec succès sur la lsite de présence.</p>
+...     {% endif %}
+... 
+...     <form method="POST" action="{% url 'enregistrer_participant' %}">
+...         {% csrf_token %}
+...         <label for="nom">Nom :</label>
+...         <input type="text" name="nom" required><br>
+... 
+...         <label for="prenom">Prénom :</label>
+...         <input type="text" name="prenom" required><br>
+... 
+...         <label for="telephone">Numéro de téléphone :</label>
+...         <input type="text" name="telephone" required><br>
+... 
+...         <label for="email">Adresse email :</label>
+...         <input type="email" name="email" required><br>
+... 
+...         <input type="submit" value="Enregistrer">
+...     </form>
+... </body>
+... </html>
