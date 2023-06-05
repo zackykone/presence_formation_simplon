@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enregistrer un participant</title>
+</head>
+<body>
+    <h1>Enregistrer un participant</h1>
+    <form action="/participants" method="POST">
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" required><br><br>
+        <label for="prenom">Prénom:</label>
+        <input type="text" name="prenom" required><br><br>
+        <label for="telephone">Téléphone:</label>
+        <input type="text" name="telephone" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+</html>

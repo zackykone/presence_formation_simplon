@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Participant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Register Participant</h1>
+    <form action="/register" method="post" id="register-form">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required><br>
+
+        <label for="telephone">Numéro de téléphone:</label>
+        <input type="tel" id="telephone" name="telephone" required><br>
+
+        <label for="email">Adresse email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+</html>
